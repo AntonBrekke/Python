@@ -1,0 +1,3 @@
+from math import sqrt
+print(sqrt(123456789123456789123456789)**2 - 123456789123456789000000000)
+# Mister 123456789 (!) til avrundingsfeil

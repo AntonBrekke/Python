@@ -1,0 +1,6 @@
+Person    Alder   Hoyde
+Hakon     21      185
+Per       14      190
+Torstein  23      183
+Ingrid    22      170
+Veslemoy  22      161

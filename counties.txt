@@ -1,0 +1,12 @@
+
+F-30;Viken;    1241165; 24593
+F-03;Oslo;    693494; 454
+F-34;Innlandet;    371385; 52072
+F-38;Vestfold og Telemark; 419396; 17466
+F-42;Agder; 307231; 16434
+F-11;Rogaland; 479892; 9377
+F-46;Vestland; 636531; 33871
+F-15;Møre og Romsdal; 265238; 14356
+F-50;Trøndelag; 468702; 42202
+F-18;Nordland; 241235; 38155
+F-54;Troms og Finnmark; 243311; 74830
