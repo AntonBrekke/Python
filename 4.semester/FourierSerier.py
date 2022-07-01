@@ -5,14 +5,28 @@ from matplotlib.animation import FuncAnimation
 
 func = input('Input a function: ')
 n = int(input('Input number of sum: '))
+# Bare formatterings-greier
 funclabel = func.replace('**', '^').replace('np.', '').replace('*', '')
+if 'exp' in funclabel:
+    labellist = funclabel.split(')')
+    print(labellist)
+    for i, text in enumerate(labellist):
+        if 'exp' in text:
+            t = text.replace('exp(', 'e^{') + '}'
+            labellist[i] = t
+        elif '(' in text and ')' not in text:
+            t = text + ')'
+            labellist[i] = t
+            print(labellist)
+    funclabel = ''.join(labellist)
+
 funclabel = f'${funclabel}$'        # Formatterer penere
 
 X = np.linspace(-4, 4, 1000)
 dX = X[1] - X[0]
 N = np.arange(1, n+1, 1)
 
-n, x = np.meshgrid(N, X, indexing='ij')     # Vi gjør det på denne måten denne gangen vi ;) 
+n, x = np.meshgrid(N, X, indexing='ij')     # Vi gjør det på denne måten denne gangen vi ;)
 
 f = eval(func)
 f1 = eval(func.replace('exp', '~').replace('x', 'X').replace('~', 'exp'))
